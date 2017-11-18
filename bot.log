@@ -55,3 +55,23 @@ Traceback (most recent call last):
 NameError: name 'text' is not defined
 telegram.ext.updater - WARNING - Exiting immediately!
 telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "C:\Program Files\Python37\lib\site-packages\telegram\ext\messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\lesson1\bot.py", line 16, in talk_to_me
+    logging.INFO(user_text)
+TypeError: 'int' object is not callable
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "C:\Program Files\Python37\lib\site-packages\telegram\ext\messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\lesson1\bot.py", line 16, in talk_to_me
+    logging.INFO(user_text)
+TypeError: 'int' object is not callable
+telegram.ext.updater - WARNING - Exiting immediately!
